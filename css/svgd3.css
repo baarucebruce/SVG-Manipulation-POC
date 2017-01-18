@@ -1,0 +1,86 @@
+.svg-container {
+	width: 480px;
+	height: 240px;
+	background-image: url('grid4.jpg');
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border: black 1px solid;
+}
+
+.data-display-panel {
+	float: right;
+	width: 300px;
+	height: auto;
+	padding:20px;
+	margin: 10px;
+	background-color: white;
+    border-style: solid;
+    border-width: 1px;
+	font-size: 16px;
+}
+
+.node-display-panel {
+	float: left;
+	width: 300px;
+	height: auto;
+	max-height: 500px;
+	overflow: auto;
+	padding:20px;
+	margin: 20px 30px;
+	background-color: white;
+    border-style: solid;
+    border-width: 1px;
+	font-size: 16px;
+}
+
+.coord-input {
+	width: 65px;
+}
+
+.coord-line {
+	margin: 10px;
+}
+
+.right-sidebar {
+	float: right;
+	width: 200px;
+}
+
+.nodeStyle:hover {
+	fill: lime;
+}
+
+.nodeStyle-hover {
+	fill: lime;
+}
+
+.originalPolygon {
+	stroke: none;
+	fill: blue;
+	opacity: .50;
+}
+
+.bgPolygon {
+	stroke: none;
+	fill: red;
+	opacity: .50;
+}
+
+.svg-layout {
+	margin: 200px;
+}
+
+.colorBox {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #000;
+	margin: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+button {
+	margin: 5px;
+}

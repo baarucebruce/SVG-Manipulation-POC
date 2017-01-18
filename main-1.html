@@ -1,0 +1,42 @@
+
+<div class="node-display-panel">
+	<h3>Node Coordinates</h3>
+	<p>
+		Canvas is 4' x 8'<br>
+		Each grid square is 12"<br>
+		Top left on the grid is 0x0<br>
+		Enter coordinates below in inches.
+	</p>
+	<ul id="nodeCoords"></ul>
+</div>
+<div class="data-display-panel">
+	<p>When SVG Manipulation is complete, click below to export: </p>
+	<div>
+		<p>Select Color:</p>
+		<span id="color-grid"></span>
+	</div>
+	<p>
+		<button type="button" onclick="openImage();">Open .PNG in new tab</button><br>
+		<button type="button" onclick="exportImage();">EXPORT to .PNG</button>
+	</p>
+	<p>
+		<button type="button" onclick="generateGCode();">Generate GCode</button><br>
+		<button type="button" onclick="exportGCode();">Export GCode</button>
+	</p>
+	<p><button type="button" onclick="location.reload(true);">Reset</button></p>
+	<br>
+	<span id="gcode-section" style="display:none;">
+		<p id="gcode"></p>
+		<p><button type="button" onclick="clearGCode();">Clear</button></p>
+	</span>
+
+</div>
+
+<div>
+	<h3>SVG Manipulation</h3>
+	<ul>
+		<li>Click and Drag nodes to reshape</li>
+		<li>Left-click + SHIFT Key to create new node</li>
+	</ul>
+</div>
+<div class="svg-container" align="center"></div>
